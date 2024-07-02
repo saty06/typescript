@@ -56,3 +56,64 @@ else{
 const json = JSON.parse("55");
 // Most expect json to be an object, but it can be a string or a number like this example
 console.log(typeof json);
+// if u  do not assign the data type it take by itself 
+let a = true;
+///  it is a boolen data do not assign any other data 
+//a= 6;// error 
+let nulldata: null =null;
+// string is  used like array
+let stringArray:string[] = []
+stringArray.push("hello ")
+// do  not fill  number 
+//stringArray.push(8)=> error 
+let numberArray:number[] =[]
+numberArray.push(2)
+// do not fill any other data 
+//  touple data 
+let tupleData : [string, number] 
+// it is take only two data 1 is string and 2 is number do not change it 
+tupleData = ["hello ", 3]
+console.log(tupleData)
+tupleData = ["data", 8]
+console.log(tupleData)
+// distructuring of tuple 
+let tupledis:[string, number ] = ["hello ", 5]
+const[x, y ] = tupledis
+console.log(x, y)
+let objectdis: object= {
+   name:String,
+   id:Number
+}
+objectdis = {
+    name : " satring data ",
+    id:67
+}
+//  union  dataa type
+function data(data:string|number):void{
+  
+  console.log('data TO CHECDK ',  data)
+if(typeof data=='number'){
+    console.log(data)
+}
+
+
+}
+data("hhgh");
+data(6)
+
+// function  regular function 
+ function data3(a:number,b:number):void{
+    console.log(`data one ${a}=> data two => ${b}`)
+
+ }
+ data3(2,5);
+ // array function 
+let regularFunction:(a:number, b:number)=>number =(a,b):number=> {
+   return a+b
+
+ }
+ console.log(regularFunction)
+ /// use as 
+ let asData:unknown =7
+ let asnum: number = (asData as string).length;
+ console.log(asnum) 
