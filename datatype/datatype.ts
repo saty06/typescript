@@ -117,3 +117,4 @@ let regularFunction:(a:number, b:number)=>number =(a,b):number=> {
  let asData:unknown =7
  let asnum: number = (asData as string).length;
  console.log(asnum) 
+ 
