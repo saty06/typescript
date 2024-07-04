@@ -54,3 +54,7 @@ let finddata = [2,3,4,4,5]
 console.log(finddata.every((index)=>index>2))
 let res2 = [...dub,[...finddata]]
 console.log(res2)
+let res3 = finddata.sort((a,b)=>{
+   return a>b
+})
+console.log(finddata)
